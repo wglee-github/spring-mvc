@@ -20,6 +20,9 @@ public class ResponseViewController {
 		return "response/hello";
 	}
 	
+	/**
+	 * 리턴에 view 가 없으면 requestMapping URL로 view를 찾아서 리턴해준다.  
+	 */
 	@RequestMapping("/response/hello")
 	public void responseViewV3(Model model) {
 		model.addAttribute("data", "hello");
